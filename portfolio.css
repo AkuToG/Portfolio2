@@ -310,12 +310,13 @@ li {
 
 #SiteTerm {
     width: 300px;
-    margin: auto 5% 3% 10%;
+    margin: auto auto auto 8%;
+    display: inline-block;
 }
 
 #SiteHxH {
     width: 300px;
-    margin: auto 5% 3% 10%;
+    margin: auto auto auto 8%;
 }
 
 #Pres2 {
