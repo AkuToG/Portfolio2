@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="themes/prism.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -76,9 +77,9 @@
         <hr>
         <p>J'ai commencé à m'intéresser au développement web en terminale, pour simple utilité, histoire d'avoir une bonne note. Dès lors, je me suis intéressé à ce domaine, plus comme une passion que comme une vocation. J'ai pu affiner mes connaissances
             lors de ma première année en licence, en travaillant surtout sur le design de mes sites.</p>
-            <br>
-            <p> Je suis donc compétent dans l'utilisation de l'HTML5 mais aussi du CSS3, qui sont les seuls languages utilisés pour réaliser ce site. J'ai aussi quelques notions en JavaScript que j'ai d'ailleurs utilisé pour faire un easter egg. De plus, je
-                connais aussi le PHP et le SQL, et j'ai des compétences dans l'administration de serveur MySQL et Apache, nécessaires pour faire fonctionner un site web. Tout cela sera illustré dans la section suivante avec les projets que j'ai pu réaliser.</div>
+        <br>
+        <p> Je suis donc compétent dans l'utilisation de l'HTML5 mais aussi du CSS3, qui sont les seuls languages utilisés pour réaliser ce site. Je aussi quelques notions en JavaScript que j'ai d'ailleurs utilisé pour faire un easter egg. De plus, je connais
+            aussi le PHP et le SQL, et j'ai des compétences dans l'administration de serveur MySQL et Apache, nécessaire pour faire fonctionner un site web. Tout cela sera illustré dans la section suivante avec les projets que j'ai pu réaliser.</div>
         </p>
         <img src="html5-css3-300x205.webp" id="htmlcss">
         <div class="progress" id="barhtmlcss">
@@ -100,14 +101,143 @@
     <details class="reveal" id="Ac2">
         <summary id="Proj">Projets</summary>
         <hr>
-        <p>Lors de mes débuts dans la programmation en terminale, comme dit précédemment, j'avais dû faire un site web, il n'est pas en ligne évidemment. Ce n'était pas très esthétique, mais ce qui comptait était le code, pas son apparence.<br>
-        </p>
-        <img src="T1.png" id="SiteTerm"><img src="T2.png" id="SiteTerm"><br>
-        <p>L'année passée, lors de ma licence, j'ai aussi dû en faire un pour un partiel, celui-la aussi n'est pas en ligne. Je me suis quand même amélioré durant cette année, aussi bien sur l'esthétique que sur le plan technique.<br></p>
-        <img src="HxH1.PNG" id="SiteHxH"><img src="HxH2.PNG" id="SiteHxH"><br>
-        <p>Durant cette année en BUT, j'ai aussi eu à faire quelques sites web pour des examens, mais je vais seulement parler du <a href="https://akutog.github.io/Portfolio/" target="LienCon1">portfolio</a> fait au premier semestre, car celui-ci est en
-            ligne et donc accessible à n'importe quel moment.
-        </p>
+
+        <p>Au cours de cette année, j'ai du réaliser plusieurs site. Plutôt que de parler pour expliquer, je préfère mettre ci-dessous le code. L'objectif de ce devoir était de faire un portfolio en anglais, puis de le mettre en ligne.</p>
+        HTML
+        <xmp>
+            <!DOCTYPE html>
+            <html lang="fr">
+
+            <head>
+
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Portfolio Berneuil Justin</title>
+                <link rel="icon" type="image/png" href="..\images\3130c8acbe50ec1af151a862ca5a53fb.jpg">
+                <link rel="stylesheet" href="..\CSS\portfolioprojet.css">
+                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+                <link href="https://fr.allfont.net/allfont.css?fonts=open-sans" rel="stylesheet">
+
+            </head>
+
+            <body>
+
+                <nav role="navigation">
+                    <div id="menuToggle">
+
+                        <input type="checkbox" />
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+
+                        <ul id="menu">
+                            <a href="">
+                                <li>Presentation</li>
+                            </a>
+                            <a href="">
+                                <li>Passion</li>
+                            </a>
+                            <a href="">
+                                <li>Professional Career</li>
+                            </a>
+                            <a href="">
+                                <li>Source</li>
+                            </a>
+                            <a href="">
+                                <li>StillInContact</li>
+                            </a>
+                            <a href="">
+                                <li>LikedIn</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <header>My Portfolio</header>
+
+
+
+                <div id="partie1">
+                    <h1 id="Moi">
+                        Présentation
+                    </h1>
+
+                    <hr id="presentation">
+
+                    <section id="PrePres">
+                        <center>Je m'appelle Berneuil Justin je suis actuellement<br> étudiant en première BUT R&T (Bachelor Universitaire de <br> Technologie de Réseaux et Télécommunications) au sein de <br> l'université de Tours à l'antenne Blois.</center>
+                    </section>
+                </div>
+
+                <div id="parti2">
+                    <h2 id="Bac">Diplôme</h2>
+                    <hr id="presentation">
+                    <img src="Logo_Cité_scolaire_Augustin-Thierry.png" id="LogoAT">
+                    <pre id="txtBac">Titulaire du baccalauréat STI2D 
+    (Sciences et Technologies de l'Industrie 
+    et du Développement Durable) durant 
+    l'année scolaire 2019-2020</pre>
+                    <img src="brevet des collèges.jpg" id="LogoAT">
+                    <pre id="txtBrev">Titulaire du brevet des collèges
+    durant l'année scolaire 2015-2016
+            </pre>
+
+                </div>
+
+                <!-- début partie " professional career "-->
+                <div id="Licence">
+
+                    <h3 id="partie3">Études Supérieurs</h3>
+                    <hr id="presentation">
+                    <img src="1024px-Université_de_Tours_(logo).svg.png" id="LogoAT">
+                    <pre id="txtBac">Après avoir obtenu mon baccalauréat,
+    j'ai rejoins l'université François Rabelais 
+    à Blois, afin d'y suivre une licence 
+    informatique durant l'année scolaire
+    2020-2021. </pre>
+                    <img src="NG0TV-YW.jpg" id="IUT">
+                    <pre id="txtIUT">Puis je me suis orienté vers l'IUT
+    de la même faculté afin d'y suivre
+    un BUT R&T (Bachelor Universitaire 
+    de Technologie de Réseaux et 
+    Télécommunications) plus adapter
+    à mon projet d'avenir durant cette
+    année scolaire.</pre>
+                </div>
+
+                <div id="Skill">
+
+                    <h3 id="partie4">Compétences</h3>
+                    <hr id="presentation">
+
+                </div>
+
+                <!-- fin partie " professional career "-->
+
+                <div id="footer">
+                    <pre id="ContactFooter"><center>Me Contacter</center></pre>
+                    <center>
+                        <hr id="HRContactFooter">
+                    </center>
+                    <center>
+                        <a id="Contact" href="PortfolioContact.html"><img src="..\images\Mail_(Apple)_logo.png" id="imgfooterA"></a>
+                        <a id="Contact" href="PortfolioContact.html"><img src="..\images\gmail.png" id="imgfooterA"></a>
+                        <a id="Contact" href="PortfolioContact.html"><img src="..\images\1200px-Discord.svg.png" id="imgfooterA"></a>
+                    </center>
+                    <p id="footerAccueil">Copyright © 2021 Berneuil Justin</p>
+                </div>
+
+            </body>
+
+            </html>
+        </xmp>
+
+        CSS
+        <iframe src="portfolioprojet.css"></iframe>
+
     </details>
     <details class="reveal" id="Ac2">
         <summary id="CI">Centre d'intérets</summary>
